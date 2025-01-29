@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <!-- 	-------- TO-DO: ADD META TAG AND NAME HERE -------- -->
+  <!----------TO-DO: ADD META TAG AND NAME HERE ---------->
   <meta name="author" content="Caleb Lopez">
   <title>Form Activity Solution File</title>
-  <!-- 	-------- TO-DO: ADD LINK TO CSS HERE -------- -->
+  <!---------- TO-DO: ADD LINK TO CSS HERE ---------->
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -33,7 +33,7 @@
         accessing your website or if they just prefer that your forms be easy to use and submit. Follow along as we code
         this in class, and please ask questions as they arise. Let's make a form!</p>
 
-      <!-- 	-------- TO-DO: ADD FORM CODE HERE DURING CLASS, FOLLOW ALONG TO COMPLETE -------- -->
+      <!----------TO-DO: ADD FORM CODE HERE DURING CLASS, FOLLOW ALONG TO COMPLETE ---------->
       <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
         <label for="fullName">Full Name<span class="required">*</span></label>
         <input type="text" id="fullName" name="fullName" autocomplete required>
@@ -52,9 +52,9 @@
           <label for="preferredContact2">Email</label>
         </fieldset>
 
-        <label name="stateSelect" for="stateSelect">State <span class="required">*</span></label>
-        <select name="stateSelect" id="stateSelect" required>
-          <option value=""></option>
+        <label for="stateSelect">State <span class="required">*</span></label>
+        <select id="stateSelect" required>
+          <option value="" disabled selected>Select a State</option>
           <option value="AL">Alabama</option>
           <option value="AK">Alaska</option>
           <option value="AZ">Arizona</option>
@@ -109,7 +109,7 @@
         </select>
 
         <label for="message">Message<span class="required">*</span></label>
-        <textarea name="message" id="message" rows="" required></textarea>
+        <textarea name="message" id="message" required></textarea>
 
         <label for="submit"></label>
         <input type="submit" name="submit" id="submit">
